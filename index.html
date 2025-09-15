@@ -138,14 +138,14 @@ polygon.addTo(map);
             "Rupa Bumi Indonesia": rupabumiindonesia,
             "Google Hybrid": Google_Hybrid,
             "F4map": F4map,
-            "Polyline":  polyline,
-            "Polygon": polygon,
         };
 
         var overlayMaps = {
             "Marker 1": marker1,
             "Marker 2": marker2,
             "Circle": circle,
+            "Polyline":  polyline,
+            "Polygon": polygon,
         };
 
         var controllayer = L.control.layers(baseMaps, overlayMaps);
@@ -154,7 +154,7 @@ polygon.addTo(map);
         // Scale
         var scale = L.control.scale({
             imperial: false,
-            maxWidth: 2000,
+            maxWidth: 200,
             position: 'bottomright'
         });
         scale.addTo(map);
